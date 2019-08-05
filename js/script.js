@@ -12,10 +12,10 @@ jQuery(document).ready(function () {
 	});
 })
 
-var t;
+let t;
 
 function up() {
-	var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+	let top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
 	if (top > 0) {
 		window.scrollBy(0, -100);
 		t = setTimeout('up()', 20);
@@ -29,7 +29,7 @@ function up() {
 document.body.onload = function () {
 
 	setTimeout(function () {
-		var preloader = document.getElementById('page-preloader');
+		let preloader = document.getElementById('page-preloader');
 		if (!preloader.classList.contains('done')) {
 			preloader.classList.add('done');
 		}
